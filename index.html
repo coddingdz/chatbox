@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBox</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/ArrayStrong.js"></script>
+    <script defer src="js/index.js"></script>
+</head>
+
+<body>
+    <main>
+        <!-- Barre de Navigation -->
+        <nav>
+            <div id="logo">
+                <div class="logo--img">
+                    <img src="./images/send.png">
+                </div>
+                <div class="logo--text">ChatBOT</div>
+            </div>
+            <div id="medium--nav">
+                <div class="urls">
+                    <a id="chat" href="#">HOME</a>
+                    <a id="chat" href="#">CHAT</a>
+                    <a id="chat" href="#">CONTACTS</a>
+                    <a id="chat" href="#">SETTINGS</a>
+                    <a id="chat" href="#">FAQS</a>
+                    <a id="chat" href="#">TERM OF USE</a>
+                </div>
+            </div>
+            <div id="right--nav">
+                <div class="icons">
+                    <div class="icons--search">
+                        <img src="./images/search.png">
+                    </div>
+                    <div class="icons--notification">
+                        <img src="./images/send.png">
+                    </div>
+                    <div class="menu">
+                        <img src="./images/icon_menu.svg" alt="icon_menu">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- barre de recherches et autres -->
+        <section class="search-more">
+            <div class="top">
+                <div class="top--left">
+                    <input type="text" placeholder="SEARCH">
+                    <div class="icon">
+                        <img src="./images/search.png">
+                    </div>
+                </div>
+                <div class="top--right">
+                    <button>CLEAR CHAT</button>
+                    <button> MORE</button>
+                </div>
+        </section>
+        <!-- Derniers message - Gauche haut -->
+        <section class="Message_amis">
+            <div class="friends_lst_msg">
+                <div class="top_friend_container">
+                    <div class="top-friends">
+                        <div class="friend">
+                            <div class="friend_icon">
+                                <img class="user_img" src="images/john_doe.jpg" alt="photo">
+                            </div>
+                            <div class="name_friend_text">
+                                <h1 class="name_friend"> Jhon Doe</h1>
+                                <span class="msg">Hi there, How are you?</span>
+                            </div>
+                            <div class="time">
+                                <span> </span>
+                                <time> 09:00 </time>
+                            </div>
+                        </div>
+                        <div class="friend">
+                            <div class="friend_icon">
+                                <img class="user_img" src="images/jessie_woo.jpg" alt="photo">
+                            </div>
+                            <div class="name_friend_text">
+                                <h1 class="name_friend"> Jessie Woo</h1>
+                                <span class="msg">Working with you like dream!</span>
+                            </div>
+                            <div class="time">
+                                <time> 08:50 </time>
+                            </div>
+                        </div>
+                        <div class="friend">
+                            <div class="friend_icon">
+                                <img class="user_img" src="images/amelia_nelson.jpg" alt="photo">
+                            </div>
+                            <div class="name_friend_text">
+                                <h1 class="name_friend"> Amelia Nelson</h1>
+                                <span class="msg">Hi there, How are you?</span>
+                            </div>
+                            <div class="time">
+                                <time> 08:30 </time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Derniers message - Gauche bas-->
+                <div class="bottom_friend_container">
+                    <div class="friend_container">
+                        <div class="friend">
+                            <div class="friend_icon">
+                                <img class="user_img" src="images/samantha_martin.jpg" alt="photo">
+                            </div>
+                            <div class="name_friend_text">
+                                <h1 class="name_friend"> Samantha Martin</h1>
+                                <span class="msg">Hi there, How are you?</span>
+                            </div>
+                            <div class="time">
+                                <time> 09:00 </time>
+                            </div>
+                        </div>
+                        <div class="friend">
+                            <div class="friend_icon">
+                                <img class="user_img" src="images/chies_lie.jpg" alt="photo">
+                            </div>
+                            <div class="name_friend_text">
+                                <h1 class="name_friend"> Chies Lie</h1>
+                                <span class="msg">Working with you like dream!</span>
+                            </div>
+                            <div class="time">
+                                <time> 08:50 </time>
+                            </div>
+                        </div>
+                        <div class="friend">
+                            <div class="friend_icon">
+                                <img class="user_img" src="images/nicolas_plum.jpg" alt="photo">
+                            </div>
+                            <div class="name_friend_text">
+                                <h1 class="name_friend"> Nicolas Plum</h1>
+                                <span class="msg">Hi there, How are you?</span>
+                            </div>
+                            <div class="time">
+                                <time> 09:00 </time>
+                            </div>
+                        </div>
+                        <div class="friend">
+                            <div class="friend_icon">
+                                <img class="user_img" src="images/alexa_doe.jpg" alt="photo">
+                            </div>
+                            <div class="name_friend_text">
+                                <h1 class="name_friend"> Alexa Doe</h1>
+                                <span class="msg">Cool!! Looks good...</span>
+                            </div>
+                            <div class="time">
+                                <time> 09:00 </time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Global Discussion et message DROITE -->
+            <div class="global_discussion">
+                <div class="haut">
+                    <!--Message recieve-->
+                    <div class="msg_recieved">
+                        <div class="discus_icon_time">
+                            <img class="user_img" src="images/john_doe.jpg" alt="photo">
+                            <span class="time"> <time> 09:00 </time> </span>
+                        </div>
+                        <div class="all_disus_receive">
+                            <div class="disus_receive">
+                                <div class="mssg">
+                                    Hi there, How are you?
+                                </div>
+                            </div>
+                            <div class="disus_receive">
+                                <div class="mssg">
+                                    Waiting for your reply. As i have to go back soon. I have to travel long distance.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Message sent-->
+                    <div class="msg_sent">
+                        <div class="disus_sent">
+                            <div id="msg" class="mssg-sent">
+                                Hi, I am coming there in few minutes. Please wait!! I am in taxi right now.
+                            </div>
+                        </div>
+                    </div>
+                    <!--Message recieve-->
+                    <div class="msg_recieved">
+                        <div class="discus_icon_time">
+                            <img class="user_img" src="images/john_doe.jpg" alt="photo">
+                            <span class="time"> <time> 09:00 </time> </span>
+                        </div>
+                        <div class="all_disus_receive">
+                            <div class="disus_receive">
+                                <div class="mssg">
+                                    Thank you very much, I am waiting here at StarBuck cafe.
+                                </div>
+                            </div>
+                            <div class="disus_receive">
+                                <div class="mssg">
+                                    Okey
+                                </div>
+                            </div>
+                            <div class="disus_receive">
+                                <div class="mssg">
+                                    you see me?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bas">
+                    <div class="input_case">
+                        <div class="left-input">
+                            <div class="input_msg_taping">
+                                <input id="input" type="text" placeholder="Type a message">
+                            </div>
+                            <div class="icons-attachement_emoji">
+                                <div class="emoji-icon">
+                                    <img src="images/emoji_icon.svg" alt="icon">
+                                </div>
+                                <div class="attchment">
+                                    <img class="user_img" src="images/attach_icon.svg" alt="icon">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right_input">
+                            <div class="sent_icon">
+                                <button id="button">
+                                    <img src="./images/send_icon.svg" alt="sent-icon" width="60px" height="60px">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

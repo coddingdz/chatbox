@@ -1,0 +1,645 @@
+/** global css*/
+body {
+    background-color: #4d426d;
+    color: white;
+    margin: 0;
+    font-family: 'Poppins';
+
+    padding: 10px 25px 10px 25px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+}
+
+/** nav css*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 8.5em 20px 8.5em;
+
+}
+nav>#logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav>#logo>.logo--img {
+    width: 50px;
+    height: 50px;
+}
+
+nav>#logo>.logo--text {
+    margin-left: 14px;
+    font-weight: bold;
+    letter-spacing: 1.7px;
+
+}
+
+nav>#right--nav {
+    display: flex;
+}
+
+nav>#right--nav>.icons {
+    display: flex;
+}
+
+nav>#right--nav>.urls {
+    display: flex;
+    font-weight: 400;
+}
+
+#medium--nav>.urls>a {
+    padding: 10px;
+}
+
+nav>#logo>#medium--nav>.urls:first-child {
+    text-decoration: underline;
+}
+
+#right--nav>.icons>.icons--search,
+#right--nav>.icons>.icons--notification {
+    width: 40px;
+    height: 40px;
+    margin-left: 1.5em;
+}
+
+/** Main MESSAGES ET AMIS**/
+
+.Message_amis {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/** Derniers message - Gauche haut **/
+
+.top_friend_container {
+    height: 100%;
+    margin-left: 9em;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(92, 79, 130);
+    overflow: hidden;
+    border-radius: 2em;
+}
+
+.friends_lst_msg {
+    width: 28%;
+    height: 100%;
+    margin-right: 12.5px;
+}
+
+.friend {
+    display: flex;
+    border-width: 0px 0px 0px 0px;
+    border-style: solid;
+    border-color: #615287;
+    margin: 13px 18px 13px 18px;
+    padding: 1px 1px 1px 0px;
+}
+
+.Message_amis>.friends_lst_msg>.top_friend_container>.top-friends>.friend>.name_friend_text {
+    text-align: start;
+    width: 80%;
+    margin: 0 -38px 0 25px;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: #675b8a;
+
+}
+
+.name_friend {
+    margin: 0px 0px 0px 0px;
+    cursor: pointer;
+}
+
+.msg {
+    display: flex;
+    font-size: 14px;
+    font-family: 'Poppins';
+    font-weight: 300;
+    flex-grow: 1;
+    opacity: 50%;
+}
+
+.time {
+    display: flex;
+    position: relative;
+    font-size: 14px;
+    font-family: 'Poppins';
+    font-weight: 300;
+
+
+}
+
+.user_img {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+/** Global Discussion et message DROITE **/
+.global_discussion {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 42.55em;
+    background-color: #5c4f82;
+    border-radius: 2em;
+    border-top-right-radius: 1em;
+    margin-left: 12.5px;
+}
+
+.all_disus_receive {
+    padding-top: 15px;
+}
+
+.msg_recieved {
+    display: flex;
+
+}
+
+.msg_recieved>div:first-child {
+    margin-top: auto;
+    margin-right: 2em;
+}
+
+.msg_recieved>div:last-child {
+    flex-grow: 1;
+}
+
+.disus_receive:first-child .mssg {
+    border-top-left-radius: 2em;
+}
+
+.disus_receive:last-child .mssg {
+    border-bottom-left-radius: 2em;
+}
+
+.msg_recieved>.all_disus_receive>.disus_receive {
+    display: flex;
+
+}
+
+.global_discussion>.haut>.msg_recieved>.discus_icon_time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 0.1%;
+    padding-left: 45px;
+    margin-bottom: 10px;
+}
+
+.mssg {
+    max-width: 75%;
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 300;
+    background-color: #4d426d;
+    padding: 25px 10px 25px 10px;
+    min-height: 20px;
+    margin-bottom: 10px;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+.global_discussion>.msg_recieved>.discus_icon_time>.time {
+    padding-top: 3px;
+}
+
+/** Message sent **/
+.msg_sent {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 0.5em;
+}
+
+.msg_sent>.disus_sent {
+    display: flex;
+    max-width: 75%;
+    margin: 2px 1em 2px auto;
+}
+
+.msg_sent>.disus_sent>.mssg-sent {
+    width: auto;
+    background: #efa985;
+    border-radius: 20px 4px 4px 20px;
+    min-height: 20px;
+    padding: 25px 10px 25px 10px;
+    margin-left: auto;
+    font-size: 18px;
+}
+
+/** Derniers message - Gauche bas **/
+.bottom_friend_container {
+    display: flex;
+    flex-direction: column;
+    background-color: #5c4f82;
+    width: 100%;
+    height: 100%;
+    border-radius: 2em;
+}
+
+.bottom_friend_container>.friend_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(92, 79, 130);
+    overflow: hidden;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 22px
+}
+
+.bottom_friend_container>.friend_container>.friend {
+    display: flex;
+    border-style: solid;
+    border-color: #615287;
+    margin: 20px 1em 10px 25px;
+}
+
+.bottom_friend_container>.friend_container>.friend>.friend_icon>.user_img {
+    width: 60px;
+    height: 60px;
+}
+
+.bottom_friend_container>.friend_container>.friend>.name_friend_text {
+    text-align: start;
+    width: 80%;
+    margin: 0 -36px 0 25px;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: #675b8a;
+    padding-bottom: 25px;
+}
+
+.bottom_friend_container>.friend_container>.friend>.name_friend_text>.name_friend {
+    font-family: "Poppins";
+    font-size: 22px;
+    letter-spacing: 0.6px;
+}
+
+.bottom_friend_container>.friend_container>.friend>.name_friend_text>.name_friend>h1 {
+    font-family: "Poppins";
+    font-size: 22px;
+    letter-spacing: 0.6px;
+}
+
+.bottom_friend_container>.friend_container>.friend>.name_friend_text>.msg {
+    display: flex;
+    font-size: 19px;
+    font-family: 'Poppins';
+    font-weight: 300;
+    flex-grow: 1;
+    letter-spacing: 0.1px;
+    opacity: 50%;
+}
+
+.bottom_friend_container>.friend_container>.friend>.time {
+    display: flex;
+    position: relative;
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+
+/** Input text message **/
+.haut {
+    height: 38em;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 1.5em;
+}
+
+::-webkit-scrollbar-track {
+    background: #4d426d;
+    border-radius: 2em;
+    margin-block: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5c4f82;
+    border-radius: 2em;
+    border: 5px solid #4d426d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #efa985;
+    border-radius: 2em;
+}
+
+.bas {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 86px;
+}
+
+.input_case {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bas>.input_case>.left-input {
+    display: flex;
+    width: 91%;
+    height: 86px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input_case>.left-input>.input_msg_taping {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.input_case>.left-input>.input_msg_taping>input {
+    display: flex;
+    position: absolute;
+    width: 52.5%;
+    height: 4em;
+    border-radius: 3em;
+    padding-left: 104px;
+    padding-right: 45px;
+    border-style: none;
+}
+
+.input_case>.left-input>.input_msg_taping>input[type="text" i] {
+    color: #000000;
+}
+
+::placeholder {
+    color: #a6a6a6;
+    font-family: "Poppins";
+    font-size: 18px;
+}
+
+
+.icons-attachement_emoji {
+    display: flex;
+    width: 48px;
+    position: relative;
+    left: 0;
+    margin-right: 92.5%;
+    opacity: 35%;
+}
+
+.input_case>.left-input>.icons-attachement_emoji>.emoji-icon>img {
+    width: 40px;
+    height: 40x;
+}
+
+.input_case>.left-input>.icons-attachement_emoji>.attchment>img {
+    width: 40px;
+    height: 40px;
+}
+
+.bas .input_case>.right_input {
+    display: flex;
+    width: 7%;
+    margin-left: 25px;
+}
+
+.input_case>.right_input>.sent_icon {
+    display: flex;
+}
+
+.input_case>.right_input>.sent_icon>img {
+    width: 60px;
+    height: 60px;
+    padding-right: 33px;
+}
+
+.input_case>.right_input>.sent_icon>.material-symbols-outlined {
+    display: flex;
+}
+
+/** list--message */
+
+.search-more {
+    margin: 0 8.5em 20px 8.5em;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top--left {
+    display: flex;
+    align-items: center;
+}
+
+.top--left>.icon {
+    margin-left: 20px;
+    position: relative;
+    width: 35px;
+    height: 35px;
+}
+
+.top--left>input {
+    position: absolute;
+    background-color: #5c4f82;
+    border-style: none;
+    width: 19.19em;
+    padding: 18px;
+    padding-left: 70px;
+    border-radius: 2em;
+    color: white;
+
+}
+
+.top--right>button {
+    padding: 20px;
+    border-color: #615287;
+    background-color: transparent;
+    border-style: solid;
+    color: white;
+    border-radius: 2em;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+input[type="text" i] {
+    font-family: "Poppins";
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/** others */
+.profile-img {
+    width: 100px;
+    height: 100px;
+}
+
+.icon>img,
+.logo--img>img,
+.icons--search>img,
+.icons--notification>img,
+.profile-img>img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.profile-img {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.icon,
+.profile-img,
+.Message_amis {
+    /** debug **/
+    border-style: solid;
+    border-color: red;
+    border-width: 0px;
+    /** debug **/
+}
+
+::-webkit-input-placeholder {
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.cont > input[type='radio'] {
+    transform: scale(2);
+    margin: 30px;
+    box-shadow: 0px 0px 10px black;
+    margin: 20px auto;
+
+}
+
+.cont > button {
+    border: none;
+    outline: none;
+    display: block;
+    border-radius: 2em;
+    cursor: pointer;
+    font-size: 25px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.echec {
+    animation: echec 0.5s ease-in-out;
+}
+
+@keyframes echec {
+    0% {
+        transform: translateX(0px) ;
+    }
+    33% {
+        transform: translateX(5px) ;
+    }
+    66% {
+        transform: translateX(-5px) ;
+    }
+    100% {
+        transform: translateX(0px) ;
+    }
+}
+
+@media screen and (max-width: 1546px) {
+    .top_friend_container {
+        display: none;
+    }
+    .global_discussion {
+        margin: 0 auto;
+    }
+    .haut , .bas {
+        width: 100%;
+    }
+    .top {
+        margin: 0 auto;
+    }
+
+    .input_case >.left-input > .input_msg_taping > input {
+        width: 50%;
+    }
+    .top--left > input {
+        display: flex;
+    }
+    
+}
+
+@media screen and (max-width: 1315px) {
+    .bottom_friend_container {
+        display: none;
+    }
+    .Message_amis {
+        display: block;
+        margin: 0 8.5em 0 0;
+        width: 100%;
+
+    }
+
+    #medium--nav>.urls>a {
+        font-size: 14px;
+        padding: 4px;
+    }
+    .friends_lst_msg {
+        display: none;
+    }
+
+    .bas .input_case>.right_input {
+        display: flex;
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+    #medium--nav>.urls>a {
+        display: none;
+    }
+    #right--nav > .icons >.menu {
+        width: 40px;
+        height: 40px;
+        margin-left: 1.5em;
+    }
+    .top--left>input {
+        width: auto;
+    }
+
+}
+
+.right_input > .sent_icon > button > img {
+    display: flex;
+    object-fit: cover;
+}
+
+#button {
+    border:none;
+    border-radius: 4em;
+    padding: 0;
+}
+#chat:hover {
+    padding-bottom: 5px;
+    color: #efa985;
+    border-style: solid;
+    border-width: 0 0 3px 0;
+    padding: 0 0 5px 0;
+    
+}

@@ -21,3 +21,9 @@ input.addEventListener('input', (e) => {
     console.log(e.target.value);
     msg.innerHTML = e.target.value
 })
+
+$(document).ready(function() {
+    setTimeout(function() {
+      location.href = location.href;
+      }, 10000); // 10000 == 10 seconds
+  });

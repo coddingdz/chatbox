@@ -17,9 +17,12 @@ const mssgsent = document.getElementsByClassName("msg_sent");
 const msg = document.getElementById('msg')
 
 
-input.addEventListener('input', (e) => {
-    console.log(e.target.value);
-    msg.innerHTML = e.target.value
+button.addEventListener('click', () => {
+    var text = document.createElement('div')
+    console.log(input)
+    msg.innerHTML = input.value
+    msg.appendChild(text);
+    input.value="";
 })
 
 

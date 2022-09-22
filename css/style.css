@@ -132,6 +132,10 @@ nav>#logo>#medium--nav>.urls:first-child {
     font-weight: 300;
     flex-grow: 1;
     opacity: 50%;
+    
+}
+::marker {
+    display: none!important;
 }
 
 .time {
@@ -233,16 +237,18 @@ nav>#logo>#medium--nav>.urls:first-child {
     display: flex;
     max-width: 75%;
     margin: 2px 1em 2px auto;
+    text-align: right;
 }
 
 .msg_sent>.disus_sent>.mssg-sent {
-    width: auto;
+    max-width: 43em;
     background: #efa985;
     border-radius: 20px 4px 4px 20px;
     min-height: 20px;
     padding: 25px 10px 25px 10px;
     margin-left: auto;
     font-size: 18px;
+    overflow: hidden;
 }
 
 /** Derniers message - Gauche bas **/

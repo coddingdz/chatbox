@@ -114,10 +114,14 @@ nav>#logo>#medium--nav>.urls:first-child {
 .Message_amis>.friends_lst_msg>.top_friend_container>.top-friends>.friend>.name_friend_text {
     text-align: start;
     width: 80%;
-    margin: 0 -38px 0 25px;
     border-style: solid;
     border-width: 0px 0px 2px 0px;
     border-color: #675b8a;
+}
+
+.Message_amis>.friends_lst_msg>.top_friend_container>.top-friends>.friend>.name_friend_text:not(:last-child) {
+        margin: 0 -38px 0 25px;
+
 }
 
 .name_friend {
@@ -383,7 +387,7 @@ nav>#logo>#medium--nav>.urls:first-child {
 .input_case>.left-input>.input_msg_taping>input {
     display: flex;
     position: absolute;
-    width: 52.5%;
+    width: 50.5%;
     height: 4em;
     border-radius: 3em;
     padding-left: 104px;
@@ -423,7 +427,7 @@ nav>#logo>#medium--nav>.urls:first-child {
 
 .bas .input_case>.right_input {
     display: flex;
-    width: 7%;
+    width: 7.5%;
     margin-left: 25px;
 }
 
@@ -548,25 +552,6 @@ input[type="text" i] {
     transition: background-color 0.2s ease-in-out;
 }
 
-.echec {
-    animation: echec 0.5s ease-in-out;
-}
-
-@keyframes echec {
-    0% {
-        transform: translateX(0px) ;
-    }
-    33% {
-        transform: translateX(5px) ;
-    }
-    66% {
-        transform: translateX(-5px) ;
-    }
-    100% {
-        transform: translateX(0px) ;
-    }
-}
-
 @media screen and (max-width: 1546px) {
     .top_friend_container {
         display: none;
@@ -582,12 +567,13 @@ input[type="text" i] {
     }
 
     .input_case >.left-input > .input_msg_taping > input {
-        width: 50%;
-    }
-    .top--left > input {
+        width: 47%;
+    }    
+    .bas .input_case>.right_input {
         display: flex;
+    width: 9%;
+    margin-left: 25px;
     }
-    
 }
 
 @media screen and (max-width: 1315px) {
@@ -611,12 +597,23 @@ input[type="text" i] {
 
     .bas .input_case>.right_input {
         display: flex;
+        width:50.5%;
     }
-
+    .top {
+        display: none;
+    }
+    .input_case >.left-input > .input_msg_taping > input {
+        width: 19%;
+    }
+    .bas .input_case>.right_input {
+        display: flex;
+        width: 23.5%;
+    margin-left: 25px;
+    }
 }
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1003px) {
     #medium--nav>.urls>a {
         display: none;
     }

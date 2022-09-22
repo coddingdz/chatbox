@@ -110,6 +110,7 @@ nav>#logo>#medium--nav>.urls:first-child {
     padding: 1px 1px 1px 0px;
 }
 
+
 .Message_amis>.friends_lst_msg>.top_friend_container>.top-friends>.friend>.name_friend_text {
     text-align: start;
     width: 80%;
@@ -117,7 +118,6 @@ nav>#logo>#medium--nav>.urls:first-child {
     border-style: solid;
     border-width: 0px 0px 2px 0px;
     border-color: #675b8a;
-
 }
 
 .name_friend {

@@ -246,6 +246,7 @@ nav>#logo>#medium--nav>.urls:first-child {
 
 .msg_sent>.disus_sent>.mssg-sent {
     max-width: 43em;
+    height: 100%;
     background: #efa985;
     border-radius: 20px 4px 4px 20px;
     min-height: 20px;
@@ -625,7 +626,16 @@ input[type="text" i] {
     .top--left>input {
         width: auto;
     }
-
+    nav {
+        margin: 0px 15% ;
+    }
+    .mssg{
+        font-size: 12px;
+    }
+    #msg {
+        font-size: 12px;
+    }
+    
 }
 
 .right_input > .sent_icon > button > img {

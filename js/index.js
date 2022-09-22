@@ -24,5 +24,3 @@ button.addEventListener('click', () => {
     msg.appendChild(text);
     input.value="";
 })
-
-
